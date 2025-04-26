@@ -1,4 +1,6 @@
 import "./App.css";
+import Section from "./common/Section";
+import { HeaderIcon} from "./common/Section/styled";
 
 function App() {
   return (
@@ -15,33 +17,7 @@ function App() {
       </p>
       <button>"ikonka wiadomosci" Hire Me</button>
 
-      <section className="section">
-        <h2 className="header2">My skillset includes 🛠️</h2>
-        <ul>
-          <li>Semantic & accessible HTML</li>
-          <li>Responsive Web Design</li>
-          <li>Teamwork</li>
-          <li>Markdown</li>
-          <li>Immutability</li>
-          <li>CSS BEM convention</li>
-          <li>CSS Grid</li>
-          <li>CSS Flexbox</li>
-          <li>React Router</li>
-          <li>Redux-Saga</li>
-          <li>Redux (Toolkit)</li>
-          <li>React Hooks</li>
-          <li>Error handling</li>
-          <li>Working with API (fetch, axios)</li>
-          <li>JavaScript: ES6+</li>
-          <li>Promises, Async/Await</li>
-          <li>GitHub Pull Requests & Review</li>
-          <li>Trello</li>
-          <li>Scrum</li>
-          <li>NPM</li>
-          <li>React</li>
-          <li>Git</li>
-        </ul>
-      </section>
+      <Section title="My skillset includes " icon={<HeaderIcon>🛠️</HeaderIcon>} />
 
       <section>
         <p>What I want to learn next "ikonka rakiety"</p>

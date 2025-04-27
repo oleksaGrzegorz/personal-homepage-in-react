@@ -1,28 +1,27 @@
 import "./App.css";
 import Section from "./common/Section";
-import { HeaderIcon} from "./common/Section/styled";
+import { HeaderIcon } from "./common/Section/styled";
+import AboutMe from "./features/AboutMe";
+import SkillsetList from "./features/List/SkillsetList";
+import WhatToLearnList from "./features/List/WhatToLearList";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        DARK MODE OFF <button>przycisk</button>
-      </p>
-      <p>"photo"</p>
-      <p>THIS IS</p>
-      <p>Grzegorz Oleksa</p>
-      <p>
-        I'm a passionate Frontend Developer in love with React, currently
-        looking for new job opportunities.
-      </p>
-      <button>"ikonka wiadomosci" Hire Me</button>
+      <AboutMe />
 
-      <Section title="My skillset includes " icon={<HeaderIcon>🛠️</HeaderIcon>} />
+      <Section
+        title="My skillset includes  "
+        icon={<HeaderIcon>🛠️</HeaderIcon>}
+        body={<SkillsetList />}
+      />
 
-      <section>
-        <p>What I want to learn next "ikonka rakiety"</p>
-        <p>"wymienione skille"</p>
-      </section>
+      <Section
+        title="What I want to learn next  "
+        icon={<HeaderIcon>🚀</HeaderIcon>}
+        body={<WhatToLearnList />}
+      />
+
       <section>
         <p>"ikonka githuba"</p>
         <p>Portfolio</p>

@@ -2,12 +2,18 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   background-color: White;
-  width: 1216px;
-  max-height: 404px;
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+  margin-left: 16px;
+  margin-right: 16px;
+  max-width: 1216px;
+  margin: 0 auto;
   padding: 32px;
   box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03);
   margin-top: 72px;
+
 `;
+
 
 export const Header = styled.h2`
   font-family: Inter;

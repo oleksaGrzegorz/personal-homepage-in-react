@@ -1,3 +1,4 @@
+import DarkModeToggle from "../DarkModeToggle/index.js";
 import myPhoto from "./images/zdjecie.jpg";
 
 import {
@@ -32,7 +33,7 @@ const AboutMe = () => (
       </ProfileInfo>
 
       <DarkMode>
-        DARK MODE OFF <button>przycisk</button>
+        <DarkModeToggle/>
       </DarkMode>
     </ProfileContainer>
   </>

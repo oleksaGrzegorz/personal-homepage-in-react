@@ -2,6 +2,7 @@ import "./App.css";
 import Section from "./common/Section";
 import { HeaderIcon } from "./common/Section/styled";
 import AboutMe from "./features/AboutMe";
+import GhProjects from "./features/GhProjects";
 import SkillsetList from "./features/List/SkillsetList";
 import WhatToLearnList from "./features/List/WhatToLearList";
 
@@ -22,12 +23,9 @@ function App() {
         body={<WhatToLearnList />}
       />
 
-      <section>
-        <p>"ikonka githuba"</p>
-        <p>Portfolio</p>
-        <p>My recent projects</p>
-        <p>"tu miejsce na moje projekty z githuba"</p>
-      </section>
+      <GhProjects/>
+
+
       <section>
         <p>LET'S TALK!</p>
         <p>grzesiek@gmail.com</p>

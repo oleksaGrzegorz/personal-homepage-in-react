@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { ReactComponent as GitHubIcon } from "./images/github.svg";
 
 export const Section = styled.section`
-  background-color: green;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 72px;
 `;
 
 export const StyledGitHubIcon = styled(GitHubIcon)`
@@ -36,42 +36,63 @@ export const LeadParagraph = styled.p`
 
 export const ProjectsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 32px;
   margin-top: 32px;
-  max-width: 1300px;
+  max-width: 1216px;
 `;
 
 export const ProjectTile = styled.div`
-  background: #f5f5f5;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: translateY(-4px);
-  }
+  box-sizing: border-box;
+  padding: 56px;
+  width: 592px;
+  height: 322px;
+  border-radius: 4px;
+  border-width: 6px;
+  background-color: white;
+  border: 6px solid #d1d5da4d;
+  box-shadow: 0px 16px 58px 0px #090a3308;
+  box-shadow: 0px -2px 50px 0px #090a3305;
 `;
 
 export const ProjectName = styled.h3`
-  margin: 0 0 10px;
-  font-size: 18px;
+  margin: 0;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  color: #0366d6;
 `;
 
 export const ProjectDescription = styled.p`
-  font-size: 14px;
-  color: #555;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 5%;
+  vertical-align: middle;
+  color: #6e7e91;
+`;
+
+export const ProjectParagraph = styled.p`
+  color: #6e7e91;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 5%;
+  vertical-align: middle;
 `;
 
 export const ProjectLink = styled.a`
-  display: inline-block;
-  margin-top: 10px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 5%;
+  vertical-align: middle;
   color: #0366d6;
+  border-bottom: 1px solid #0366d6;
   text-decoration: none;
-  font-weight: bold;
-
-  &:hover {
-    text-decoration: underline;
-  }
 `;

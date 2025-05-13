@@ -1,5 +1,16 @@
 import { useEffect, useState } from "react";
-import { Section, Header, LeadParagraph, StyledGitHubIcon, ProjectsWrapper, ProjectTile, ProjectName, ProjectDescription, ProjectLink } from "./styled";
+import {
+  Section,
+  Header,
+  LeadParagraph,
+  StyledGitHubIcon,
+  ProjectsWrapper,
+  ProjectTile,
+  ProjectName,
+  ProjectDescription,
+  ProjectLink,
+  ProjectParagraph,
+} from "./styled";
 
 const GhProjects = () => {
   const [repos, setRepos] = useState([]);
@@ -35,13 +46,24 @@ const GhProjects = () => {
         <ProjectsWrapper>
           {repos.map((repo) => (
             <ProjectTile key={repo.id}>
-            <ProjectName>{repo.name}</ProjectName>
+              <ProjectName>{repo.name}</ProjectName>
               <ProjectDescription>
                 {repo.description || "Brak opisu"}
               </ProjectDescription>
-              <ProjectLink href={repo.html_url} target="_blank" rel="noreferrer">
-                Zobacz na GitHubie
-              </ProjectLink>
+              {repo.homepage && (
+                <ProjectParagraph>
+                  Demo:{" "}
+                  <ProjectLink href={repo.homepage} target="_blank" rel="noreferrer">
+                    {repo.homepage}
+                  </ProjectLink>
+                </ProjectParagraph>
+              )}
+              <ProjectParagraph>
+                Code:{" "}
+                <ProjectLink href={repo.html_url} target="_blank" rel="noreferrer">
+                  {repo.html_url}
+                </ProjectLink>
+              </ProjectParagraph>
             </ProjectTile>
           ))}
         </ProjectsWrapper>

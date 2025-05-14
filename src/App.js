@@ -2,6 +2,7 @@ import "./App.css";
 import Section from "./common/Section";
 import { HeaderIcon } from "./common/Section/styled";
 import AboutMe from "./features/AboutMe";
+import { Footer } from "./features/Footer";
 import GhProjects from "./features/GhProjects";
 import SkillsetList from "./features/List/SkillsetList";
 import WhatToLearnList from "./features/List/WhatToLearList";
@@ -24,14 +25,7 @@ function App() {
       />
 
       <GhProjects/>
-
-
-      <section>
-        <p>LET'S TALK!</p>
-        <p>grzesiek@gmail.com</p>
-        <p>"tekst o mnie"</p>
-        <p>"ikonka github" "facebook" "linkedin" "insta"</p>
-      </section>
+      <Footer/>
     </div>
   );
 }

@@ -9,34 +9,30 @@ import {
   Photo,
   ProfileContainer,
   ProfileInfo,
-  ProfilePhoto,
   SmallFontText,
   StyledMessageIcon,
 } from "./styled";
 
-
 const AboutMe = () => (
-  <>
-    <ProfileContainer>
-      <ProfilePhoto>
-        <Photo src={myPhoto} alt="myFace" />
-      </ProfilePhoto>
+  <ProfileContainer>
+      <Photo src={myPhoto} alt="Photo of Grzegorz" />
+    <ProfileInfo>
+      <SmallFontText>THIS IS</SmallFontText>
+      <Header>Grzegorz Oleksa</Header>
+      <InfoText>
+        👨🏻‍💻 I'm a passionate Frontend Developer in love with React, currently
+        looking for new job opportunities.
+      </InfoText>
+      <HireMeButton>
+        <StyledMessageIcon />
+        Hire Me
+      </HireMeButton>
+    </ProfileInfo>
 
-      <ProfileInfo>
-        <SmallFontText>THIS IS</SmallFontText>
-        <Header>Grzegorz Oleksa</Header>
-        <InfoText>
-          👨🏻‍💻 I'm a passionate Frontend Developer in love with React, currently
-          looking for new job opportunities.
-        </InfoText>
-        <HireMeButton><StyledMessageIcon />Hire Me</HireMeButton>
-      </ProfileInfo>
-
-      <DarkMode>
-        <DarkModeToggle/>
-      </DarkMode>
-    </ProfileContainer>
-  </>
+    <DarkMode>
+      <DarkModeToggle />
+    </DarkMode>
+  </ProfileContainer>
 );
 
 export default AboutMe;

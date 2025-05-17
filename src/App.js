@@ -11,21 +11,18 @@ function App() {
   return (
     <div className="App">
       <AboutMe />
-
       <Section
         title="My skillset includes  "
         icon={<HeaderIcon>🛠️</HeaderIcon>}
         body={<SkillsetList />}
       />
-
       <Section
         title="What I want to learn next  "
         icon={<HeaderIcon>🚀</HeaderIcon>}
         body={<WhatToLearnList />}
       />
-
-      <GhProjects/>
-      <Footer/>
+      <GhProjects />
+      <Footer />
     </div>
   );
 }

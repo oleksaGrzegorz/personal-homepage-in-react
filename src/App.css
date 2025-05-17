@@ -1,5 +1,4 @@
 .App {
-  background-color: #fafaff;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -7,6 +6,10 @@
   align-items: center;
 }
 
-.body {
-  background-color: gray;
+body {
+  background-color: #fafaff;
+}
+
+body.dark-mode {
+  background-color: #121212;
 }

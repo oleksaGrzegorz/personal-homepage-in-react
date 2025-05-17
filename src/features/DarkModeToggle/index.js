@@ -1,16 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ToggleButton, ToggleLabel, ToggleWrapper } from './styled';
 
 export default function DarkModeToggle() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
+    setIsDarkMode((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [isDarkMode]);
 
   return (
     <ToggleWrapper>
-      <ToggleLabel>
+      <ToggleLabel isDarkMode={isDarkMode}>
         {isDarkMode ? 'DARK MODE ON' : 'DARK MODE OFF'}
       </ToggleLabel>
       <ToggleButton 

@@ -9,10 +9,6 @@ export const ToggleWrapper = styled.div`
 export const ToggleLabel = styled.span`
   font-size: 12px;
   font-weight: 700;
-  font-family: Inter;
-  line-height: 130%;
-  letter-spacing: 0%;
-  vertical-align: middle;
   text-transform: uppercase;
   color: #4b5563;
   white-space: nowrap;
@@ -23,11 +19,10 @@ export const ToggleButton = styled.button`
   width: 47.06px;
   height: 25.07px;
   background-color: ${props => props.isDarkMode ? '#374151' : '#e5e7eb'};
-  border-radius: 9999px;
+  border-radius: 50px;
   transition: background-color 0.2s;
   cursor: pointer;
   border: none;
-  outline: none;
   padding: 0;
   
   &:after {

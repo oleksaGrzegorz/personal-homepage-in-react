@@ -11,6 +11,7 @@ import {
   ProjectLink,
   ProjectParagraph,
 } from "./styled";
+import ErrorMessage from "./ErrorMessage";
 
 const GhProjects = () => {
   const [repos, setRepos] = useState([]);
@@ -26,12 +27,17 @@ const GhProjects = () => {
       })
       .then((data) => {
         setRepos(data);
-        setLoading(false);
+
+        setTimeout(() => {
+          setLoading(false);
+        }, 3000);
       })
       .catch((err) => {
         console.error(err);
         setError(true);
-        setLoading(false);
+        setTimeout(() => {
+          setLoading(false);
+        }, 3000);
       });
   }, []);
   return (
@@ -39,8 +45,9 @@ const GhProjects = () => {
       <StyledGitHubIcon />
       <Header>Portfolio</Header>
       <LeadParagraph>My recent projects</LeadParagraph>
-      {loading && <p>Ładowanie projektów...</p>}
-      {error && <p>Nie udało się załadować projektów z GitHuba.</p>}
+
+      {loading && <p>Please wait, projects are being loaded...</p>}
+      {!loading && error && <ErrorMessage />}
 
       {!loading && !error && (
         <ProjectsWrapper>
@@ -53,14 +60,22 @@ const GhProjects = () => {
               {repo.homepage && (
                 <ProjectParagraph>
                   Demo:{" "}
-                  <ProjectLink href={repo.homepage} target="_blank" rel="noreferrer">
+                  <ProjectLink
+                    href={repo.homepage}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {repo.homepage}
                   </ProjectLink>
                 </ProjectParagraph>
               )}
               <ProjectParagraph>
                 Code:{" "}
-                <ProjectLink href={repo.html_url} target="_blank" rel="noreferrer">
+                <ProjectLink
+                  href={repo.html_url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {repo.html_url}
                 </ProjectLink>
               </ProjectParagraph>

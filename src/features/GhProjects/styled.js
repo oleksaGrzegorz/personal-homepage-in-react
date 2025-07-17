@@ -19,7 +19,7 @@ export const Header = styled.h2`
   font-weight: 900;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   padding-top: 12px;
   margin: 0;
 `;
@@ -29,7 +29,7 @@ export const LeadParagraph = styled.p`
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   padding-top: 8;
   margin: 0;
 `;
@@ -61,7 +61,7 @@ export const ProjectName = styled.h3`
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   color: #0366d6;
 `;
 
@@ -70,7 +70,7 @@ export const ProjectDescription = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   vertical-align: middle;
   color: #6e7e91;
 `;
@@ -81,7 +81,7 @@ export const ProjectParagraph = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   vertical-align: middle;
 `;
 
@@ -90,9 +90,57 @@ export const ProjectLink = styled.a`
   font-weight: 400;
   font-size: 15px;
   line-height: 140%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   vertical-align: middle;
   color: #0366d6;
   border-bottom: 1px solid #0366d6;
   text-decoration: none;
+`;
+
+export const ErrorContainer = styled.div`
+  margin-top: 88px;
+  width: 426px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+`;
+
+export const ErrorIcon = styled.img`
+  width: 48px;
+  height: 48px;
+`;
+
+export const ErrorHeader = styled.h3`
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  margin-top: 23px;
+`;
+
+export const ErrorText = styled.p`
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+`;
+
+export const ErrorButton = styled.button`
+  background-color: #0366d6;
+  border: 1px solid #d1d5da1a;
+  color: white;
+  font-weight: 600;
+  font-size: 20.06px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+  margin-top: 32px;
+  border-width: 1px;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  gap: 16px;
 `;

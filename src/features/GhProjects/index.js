@@ -10,8 +10,11 @@ import {
   ProjectDescription,
   ProjectLink,
   ProjectParagraph,
+  LoadingImg,
+  LoadingDiv,
 } from "./styled";
 import ErrorMessage from "./ErrorMessage";
+import LoadingGif from "./images/tube-spinner.svg";
 
 const GhProjects = () => {
   const [repos, setRepos] = useState([]);
@@ -46,7 +49,12 @@ const GhProjects = () => {
       <Header>Portfolio</Header>
       <LeadParagraph>My recent projects</LeadParagraph>
 
-      {loading && <p>Please wait, projects are being loaded...</p>}
+      {loading && (
+        <LoadingDiv>
+          <p>Please wait, projects are being loaded...</p>
+          <LoadingImg src={LoadingGif} alt="loading gif" />
+        </LoadingDiv>
+      )}
       {!loading && error && <ErrorMessage />}
 
       {!loading && !error && (

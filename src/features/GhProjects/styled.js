@@ -47,7 +47,6 @@ export const ProjectTile = styled.div`
   padding: 56px;
   width: 592px;
   height: 322px;
-  overflow: hidden;
   border-radius: 4px;
   border-width: 6px;
   background-color: white;
@@ -69,7 +68,7 @@ export const ProjectName = styled.h3`
 export const ProjectDescription = styled.p`
   font-family: Inter;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.05em;
   vertical-align: middle;

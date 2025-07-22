@@ -10,7 +10,7 @@ export const Section = styled.section`
 
 export const StyledGitHubIcon = styled(GitHubIcon)`
   width: 40px;
-  height: 39, 01px;
+  height: 39.01px;
   fill: #0366d6;
 `;
 
@@ -30,7 +30,7 @@ export const LeadParagraph = styled.p`
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.05em;
-  padding-top: 8;
+  padding-top: 8px;
   margin: 0;
 `;
 
@@ -47,6 +47,7 @@ export const ProjectTile = styled.div`
   padding: 56px;
   width: 592px;
   height: 322px;
+  overflow: hidden;
   border-radius: 4px;
   border-width: 6px;
   background-color: white;

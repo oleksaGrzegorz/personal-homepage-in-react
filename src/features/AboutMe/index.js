@@ -13,9 +13,9 @@ import {
   StyledMessageIcon,
 } from "./styled";
 
-const AboutMe = () => (
+const AboutMe = ({ isDarkMode, toggleDarkMode }) => (
   <ProfileContainer>
-      <Photo src={myPhoto} alt="Photo of Grzegorz" />
+    <Photo src={myPhoto} alt="Photo of Grzegorz" />
     <ProfileInfo>
       <SmallFontText>THIS IS</SmallFontText>
       <Header>Grzegorz Oleksa</Header>
@@ -30,7 +30,7 @@ const AboutMe = () => (
     </ProfileInfo>
 
     <DarkMode>
-      <DarkModeToggle />
+      <DarkModeToggle isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
     </DarkMode>
   </ProfileContainer>
 );

@@ -4,13 +4,14 @@ import {
   MidParagraph,
   Section,
   SmallParagraph,
+  StyledDiv,
   StyledFacebookIcon,
   StyledGitHubIcon,
   StyledInstagramIcon,
   StyledLinkedinIcon,
 } from "./styled";
 
-export const Footer = () => (
+export const Footer = ({isDarkMode}) => (
   <>
     <Section>
       <ContentWrapper>
@@ -21,10 +22,10 @@ export const Footer = () => (
           a website, dashboard or mobile app in mind and need some help to make
           your ideas come to life, feel free to contact me. ✌️
         </MidParagraph>
-        <p>
+        <StyledDiv isDarkMode={isDarkMode}>
           <StyledGitHubIcon /> <StyledFacebookIcon /> <StyledLinkedinIcon />{" "}
           <StyledInstagramIcon />
-        </p>
+        </StyledDiv>
       </ContentWrapper>
     </Section>
   </>

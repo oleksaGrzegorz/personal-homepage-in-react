@@ -41,9 +41,14 @@ export const MidParagraph = styled.p`
   letter-spacing: 5%;
 `;
 
+export const StyledDiv = styled.div`
+fill: ${({ isDarkMode }) => (isDarkMode ? "#eee" : "#black")};
+`;
+
 export const StyledGitHubIcon = styled(GitHubIcon)`
   width: 48px;
   height: 48px;
+  color: white;
   :hover {
     fill: #0366d6;
   }

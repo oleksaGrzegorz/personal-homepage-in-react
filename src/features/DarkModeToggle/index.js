@@ -1,28 +1,13 @@
-import { useEffect, useState } from 'react';
-import { ToggleButton, ToggleLabel, ToggleWrapper } from './styled';
+import { ToggleButton, ToggleLabel, ToggleWrapper } from "./styled";
 
-export default function DarkModeToggle() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode((prev) => !prev);
-  };
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-  }, [isDarkMode]);
-
+export default function DarkModeToggle({ isDarkMode, toggleDarkMode }) {
   return (
     <ToggleWrapper>
       <ToggleLabel isDarkMode={isDarkMode}>
-        {isDarkMode ? 'DARK MODE ON' : 'DARK MODE OFF'}
+        {isDarkMode ? "DARK MODE ON" : "DARK MODE OFF"}
       </ToggleLabel>
-      <ToggleButton 
-        onClick={toggleDarkMode} 
+      <ToggleButton
+        onClick={toggleDarkMode}
         isDarkMode={isDarkMode}
         aria-pressed={isDarkMode}
       />

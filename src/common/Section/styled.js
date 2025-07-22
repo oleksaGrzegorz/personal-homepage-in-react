@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-  background-color: White;
+  background-color: ${({ isDarkMode }) => (isDarkMode ? "#363636B8" : "#ffffff")};
   box-sizing: border-box;
   width: calc(100% - 32px);
   max-width: 1216px;

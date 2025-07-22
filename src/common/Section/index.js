@@ -1,12 +1,12 @@
 import { Header, StyledSection } from "./styled";
 
-const Section = (props) => (
-  <StyledSection>
+const Section = ({title,icon,body, isDarkMode}) => (
+  <StyledSection isDarkMode={isDarkMode}>
     <Header>
-      {props.title}
-      {props.icon}
+      {title}
+      {icon}
     </Header>
-    {props.body}
+    {body}
   </StyledSection>
 );
 

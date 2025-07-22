@@ -49,7 +49,7 @@ export const ProjectTile = styled.div`
   height: 322px;
   border-radius: 4px;
   border-width: 6px;
-  background-color: white;
+  background-color: ${({ isDarkMode }) => (isDarkMode ? "#363636B8" : "#ffffff")};
   border: 6px solid #d1d5da4d;
   box-shadow: 0px 16px 58px 0px #090a3308;
   box-shadow: 0px -2px 50px 0px #090a3305;

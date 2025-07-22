@@ -6,7 +6,7 @@ export const List = styled.ul`
   list-style: none;
   padding: 0;
   gap: 8px 0;
-  justify-content: flex-start; /* lepiej */
+  justify-content: flex-start;
 `;
 
 export const ListItem = styled.li`

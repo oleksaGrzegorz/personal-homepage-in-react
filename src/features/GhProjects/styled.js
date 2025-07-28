@@ -6,6 +6,7 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   margin-top: 72px;
+  background-color: red;
 `;
 
 export const StyledGitHubIcon = styled(GitHubIcon)`
@@ -40,6 +41,11 @@ export const ProjectsWrapper = styled.div`
   gap: 32px;
   margin-top: 32px;
   max-width: 1216px;
+  box-sizing: border-box;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ProjectTile = styled.div`
@@ -53,6 +59,14 @@ export const ProjectTile = styled.div`
   border: 6px solid #d1d5da4d;
   box-shadow: 0px 16px 58px 0px #090a3308;
   box-shadow: 0px -2px 50px 0px #090a3305;
+
+@media (max-width: 767px) {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 `;
 
 export const ProjectName = styled.h3`

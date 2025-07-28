@@ -4,12 +4,17 @@ export const StyledSection = styled.section`
   background-color: ${({ theme }) => theme.sectionBackground};
   color: ${({ theme }) => theme.text};
   box-sizing: border-box;
-  width: calc(100% - 32px);
+  width: 100%;
   max-width: 1216px;
   padding: 32px;
-  box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03);
-  margin-top: 72px;
+  margin: 72px auto 0 auto;
+  box-shadow: ${({ theme }) => theme.sectionBoxShadow};
   border-radius: 4px;
+
+  @media (max-width: 767px) {
+    padding: 32px 14px;
+    margin-top: 48px;
+  }
 `;
 
 export const Header = styled.h2`

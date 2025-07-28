@@ -11,8 +11,9 @@ export const ProfileContainer = styled.main`
 
   @media (max-width: 767px) {
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0px;
   }
 `;
 
@@ -25,6 +26,7 @@ export const Photo = styled.img`
     @media (max-width: 767px) {
     width: 200px;
     height: 200px;
+    margin-top: 0px;
   }
 `;
 
@@ -34,6 +36,12 @@ export const ProfileInfo = styled.div`
   margin-top: 183px;
   margin-left: 72px;
   background-color: red;
+
+      @media (max-width: 767px) {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
 `;
 
 export const SmallFontText = styled.p`

@@ -1,16 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #fafaff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #1E1E1E;
+  color: #ffffff;
+}
+
 .App {
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-body {
-  background-color: #fafaff;
-}
-
-body.dark-mode {
-  background-color: #1E1E1E;
-  color: #ffffff;
+@media (min-width: 768px) {
+  .App {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

@@ -6,8 +6,14 @@ export const ProfileContainer = styled.main`
   flex-direction: row;
   max-width: 1216px;
   width: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 32px;
+  background-color: yellow;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
 `;
 
 export const Photo = styled.img`
@@ -15,6 +21,11 @@ export const Photo = styled.img`
   height: 384px;
   border-radius: 50%;
   margin-top: 119px;
+
+    @media (max-width: 767px) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 export const ProfileInfo = styled.div`
@@ -22,6 +33,7 @@ export const ProfileInfo = styled.div`
   flex-direction: column;
   margin-top: 183px;
   margin-left: 72px;
+  background-color: red;
 `;
 
 export const SmallFontText = styled.p`
@@ -37,7 +49,7 @@ export const Header = styled.h1`
   font-weight: 900;
   font-size: 38px;
   line-height: 100%;
-  letter-spacing:0.05em;
+  letter-spacing: 0.05em;
   margin: 0;
 `;
 
@@ -45,7 +57,7 @@ export const InfoText = styled.p`
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  letter-spacing:0.05em;
+  letter-spacing: 0.05em;
   color: ${({ theme }) => theme.text};
 `;
 
@@ -55,7 +67,7 @@ export const HireMeButton = styled.button`
   width: 154px;
   height: 49px;
   border: none;
-  border-radius:4px;
+  border-radius: 4px;
   padding: 0;
   font-weight: 600;
   font-size: 20.06px;
@@ -77,4 +89,13 @@ export const StyledMessageIcon = styled(MessageIcon)`
 
 export const DarkMode = styled.div`
   margin-top: 119px;
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+    order: -1;
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
 `;

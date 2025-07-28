@@ -49,7 +49,7 @@ export const ProjectTile = styled.div`
   height: 322px;
   border-radius: 4px;
   border-width: 6px;
-  background-color: ${({ isDarkMode }) => (isDarkMode ? "#363636B8" : "#ffffff")};
+  background-color: ${({ theme }) => theme.sectionBackground};
   border: 6px solid #d1d5da4d;
   box-shadow: 0px 16px 58px 0px #090a3308;
   box-shadow: 0px -2px 50px 0px #090a3305;
@@ -62,7 +62,7 @@ export const ProjectName = styled.h3`
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 0.05em;
-  color: #0366d6;
+  color: ${({ theme }) => theme.projectHeaderColor};
 `;
 
 export const ProjectDescription = styled.p`
@@ -72,11 +72,11 @@ export const ProjectDescription = styled.p`
   line-height: 140%;
   letter-spacing: 0.05em;
   vertical-align: middle;
-  color: #6e7e91;
+  color: ${({ theme }) => theme.text};
 `;
 
 export const ProjectParagraph = styled.p`
-  color: #6e7e91;
+  color: ${({ theme }) => theme.text};
   font-family: Inter;
   font-weight: 400;
   font-size: 18px;

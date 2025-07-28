@@ -16,7 +16,7 @@ import {
 import ErrorMessage from "./ErrorMessage";
 import LoadingGif from "./images/tube-spinner.svg";
 
-const GhProjects = ({isDarkMode}) => {
+const GhProjects = () => {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -60,7 +60,7 @@ const GhProjects = ({isDarkMode}) => {
       {!loading && !error && (
         <ProjectsWrapper>
           {repos.map((repo) => (
-            <ProjectTile key={repo.id} isDarkMode={isDarkMode}>
+            <ProjectTile key={repo.id}>
               <ProjectName>{repo.name}</ProjectName>
               <ProjectDescription>
                 {repo.description || "Brak opisu"}

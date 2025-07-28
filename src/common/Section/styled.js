@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-  background-color: ${({ isDarkMode }) => (isDarkMode ? "#363636B8" : "#ffffff")};
+  background-color: ${({ theme }) => theme.sectionBackground};
+  color: ${({ theme }) => theme.text};
   box-sizing: border-box;
   width: calc(100% - 32px);
   max-width: 1216px;
@@ -20,6 +21,7 @@ export const Header = styled.h2`
   letter-spacing: 0.05em;
   margin-top: 0;
   margin-bottom: 32px;
+  color: ${({ theme }) => theme.headerColor};
 `;
 
 export const HeaderIcon = styled.span`

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./theme";
 import "./App.css";
 import Section from "./common/Section";
 import { HeaderIcon } from "./common/Section/styled";
@@ -23,24 +25,23 @@ function App() {
     }
   }, [isDarkMode]);
   return (
-    <div className="App">
-      <AboutMe isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <Section
-        isDarkMode={isDarkMode}
-        title="My skillset includes  "
-        icon={<HeaderIcon>🛠️</HeaderIcon>}
-        body={<SkillsetList />}
-      />
-      <Section
-        is
-        isDarkMode={isDarkMode}
-        title="What I want to learn next  "
-        icon={<HeaderIcon>🚀</HeaderIcon>}
-        body={<WhatToLearnList />}
-      />
-      <GhProjects isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} />
-    </div>
+    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+      <div className="App">
+        <AboutMe isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+        <Section
+          title="My skillset includes  "
+          icon={<HeaderIcon>🛠️</HeaderIcon>}
+          body={<SkillsetList />}
+        />
+        <Section
+          title="What I want to learn next  "
+          icon={<HeaderIcon>🚀</HeaderIcon>}
+          body={<WhatToLearnList />}
+        />
+        <GhProjects />
+        <Footer isDarkMode={isDarkMode} />
+      </div>
+    </ThemeProvider>
   );
 }
 

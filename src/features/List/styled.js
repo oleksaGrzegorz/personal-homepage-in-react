@@ -17,7 +17,7 @@ export const ListItem = styled.li`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 5%;
-  color: rgba(110, 126, 145, 1);
+  color: ${({ theme }) => theme.text};
 
   &::before {
     content: "•";

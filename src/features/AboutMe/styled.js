@@ -46,7 +46,7 @@ export const InfoText = styled.p`
   font-size: 20px;
   line-height: 140%;
   letter-spacing:0.05em;
-  color: rgba(110, 126, 145, 1);
+  color: ${({ theme }) => theme.text};
 `;
 
 export const HireMeButton = styled.button`

@@ -1,7 +1,7 @@
 import { Header, StyledSection } from "./styled";
 
 const Section = ({title,icon,body, isDarkMode}) => (
-  <StyledSection isDarkMode={isDarkMode}>
+  <StyledSection>
     <Header>
       {title}
       {icon}

@@ -7,7 +7,6 @@ export const ProfileContainer = styled.main`
   max-width: 1216px;
   width: 100%;
   padding: 32px;
-  background-color: yellow;
 
   @media (max-width: 767px) {
     flex-direction: column;
@@ -24,8 +23,8 @@ export const Photo = styled.img`
   margin-top: 119px;
 
     @media (max-width: 767px) {
-    width: 200px;
-    height: 200px;
+    width: 132.67px;
+    height: 132.67px;
     margin-top: 0px;
   }
 `;
@@ -35,7 +34,6 @@ export const ProfileInfo = styled.div`
   flex-direction: column;
   margin-top: 183px;
   margin-left: 72px;
-  background-color: red;
 
       @media (max-width: 767px) {
     margin-top: 0px;

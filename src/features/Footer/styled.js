@@ -31,6 +31,10 @@ export const EmailParagraph = styled.p`
   font-size: 32px;
   line-height: 100%;
   letter-spacing: 5%;
+
+  &:hover {
+    color: #0366d6;
+  }
 `;
 
 export const MidParagraph = styled.p`

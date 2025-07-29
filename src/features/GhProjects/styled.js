@@ -6,7 +6,6 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   margin-top: 72px;
-  background-color: red;
 `;
 
 export const StyledGitHubIcon = styled(GitHubIcon)`
@@ -59,6 +58,10 @@ export const ProjectTile = styled.div`
   border: 6px solid #d1d5da4d;
   box-shadow: 0px 16px 58px 0px #090a3308;
   box-shadow: 0px -2px 50px 0px #090a3305;
+
+  &:hover {
+    border: 6px solid rgba(133, 180, 237, 0.3);
+  }
 
 @media (max-width: 767px) {
   width: 100%;

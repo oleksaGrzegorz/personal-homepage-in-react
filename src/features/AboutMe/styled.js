@@ -22,7 +22,7 @@ export const Photo = styled.img`
   border-radius: 50%;
   margin-top: 119px;
 
-    @media (max-width: 767px) {
+  @media (max-width: 767px) {
     width: 132.67px;
     height: 132.67px;
     margin-top: 0px;
@@ -35,7 +35,7 @@ export const ProfileInfo = styled.div`
   margin-top: 183px;
   margin-left: 72px;
 
-      @media (max-width: 767px) {
+  @media (max-width: 767px) {
     margin-top: 0px;
     margin-left: 0px;
     width: 100%;
@@ -85,9 +85,9 @@ export const HireMeButton = styled.button`
   justify-content: center;
   gap: 16px;
 
-&:hover {
-border: 2px solid rgb(82, 146, 220);
-}
+  &:hover {
+    border: 2px solid rgb(82, 146, 220);
+  }
 `;
 
 export const StyledMessageIcon = styled(MessageIcon)`

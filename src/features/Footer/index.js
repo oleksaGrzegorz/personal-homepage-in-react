@@ -11,7 +11,7 @@ import {
   StyledLinkedinIcon,
 } from "./styled";
 
-export const Footer = ({isDarkMode}) => (
+export const Footer = ({ isDarkMode }) => (
   <>
     <Section>
       <ContentWrapper>

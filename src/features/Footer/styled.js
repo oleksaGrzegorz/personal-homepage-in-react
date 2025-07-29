@@ -46,7 +46,7 @@ export const MidParagraph = styled.p`
 `;
 
 export const StyledDiv = styled.div`
-fill: ${({ isDarkMode }) => (isDarkMode ? "#eee" : "#black")};
+  fill: ${({ isDarkMode }) => (isDarkMode ? "#eee" : "#black")};
 `;
 
 export const StyledGitHubIcon = styled(GitHubIcon)`

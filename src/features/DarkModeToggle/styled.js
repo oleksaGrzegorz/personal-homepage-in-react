@@ -36,7 +36,8 @@ export const ToggleButton = styled.button`
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background-color: ${(props) => (props.isDarkMode ? "#e5e7eb" : "#363636B8")};
+    background-color: ${(props) =>
+      props.isDarkMode ? "#e5e7eb" : "#363636B8"};
     border-radius: 50%;
     transition: all 0.2s;
     text-align: center;

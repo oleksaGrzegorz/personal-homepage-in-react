@@ -84,6 +84,7 @@ export const HireMeButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 16px;
+  cursor: pointer;
 
   &:hover {
     border: 2px solid rgb(82, 146, 220);

@@ -31,6 +31,7 @@ export const EmailParagraph = styled.p`
   font-size: 32px;
   line-height: 100%;
   letter-spacing: 5%;
+  cursor: pointer;
 
   &:hover {
     color: #0366d6;
@@ -53,6 +54,7 @@ export const StyledGitHubIcon = styled(GitHubIcon)`
   width: 48px;
   height: 48px;
   color: white;
+  cursor: pointer;
   :hover {
     fill: #0366d6;
   }
@@ -61,6 +63,7 @@ export const StyledGitHubIcon = styled(GitHubIcon)`
 export const StyledFacebookIcon = styled(FacebookIcon)`
   width: 48px;
   height: 48px;
+  cursor: pointer;
   :hover {
     fill: #0366d6;
   }
@@ -69,6 +72,7 @@ export const StyledFacebookIcon = styled(FacebookIcon)`
 export const StyledLinkedinIcon = styled(LinkedinIcon)`
   width: 48px;
   height: 48px;
+  cursor: pointer;
   :hover {
     fill: #0366d6;
   }
@@ -77,7 +81,7 @@ export const StyledLinkedinIcon = styled(LinkedinIcon)`
 export const StyledInstagramIcon = styled(InstagramIcon)`
   width: 48px;
   height: 48px;
-
+  cursor: pointer;
   :hover {
     fill: #0366d6;
   }
